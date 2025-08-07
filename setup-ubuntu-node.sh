@@ -59,3 +59,5 @@ sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 
 echo "✅ Worker node setup is complete. Now, run the 'kubeadm join' command from your control-plane."
+
+echo "Run 'kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.28.0/manifests/calico.yaml' in control node to activate this worker node."
